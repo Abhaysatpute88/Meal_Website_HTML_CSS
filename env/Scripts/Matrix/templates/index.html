@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaitanyaAgro.com</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<style>
+    /*css reset*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        color:white;
+        background: url(static/login-template.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        left: 25px;
+        top: 25px;
+        font-size: 25px;
+    }
+    .left img{
+        width: 120px;
+    }
+    .left div{
+        text-align: center ;
+    }
+    .mid{
+        position: absolute;
+        right: 400px;
+        left: 450px;
+        top: 20px;
+        display: inline-block;
+
+    }
+/* put right section here */
+
+    
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color:purple;
+        text-decoration: none;
+        padding: 35px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(26, 182, 96);
+    }
+    .btn{
+        margin: 0px 0px;
+        background-color: white;
+        color: black;
+        padding: 14px 14px;
+        border-radius: 20px;
+        font-size: 20px;  
+        cursor: pointer; 
+    }
+    .btn.hover{
+        background-color: green;
+    }
+    .container{
+        text-align: center;
+        margin: 106px 80px;
+        padding: 100px 50px;
+        width: 60%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        border-bottom: 3px solid purple;
+        background: none;
+        text-align: center;
+        width: 400px;
+        padding: 0px 0px;
+        margin: 11px auto;
+        font-size: 21px;
+
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="static/logo.png" alt="">
+            <div>CA</div>
+
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Our Vision</a></li>
+                <li><a>Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- put right section here -->
+
+
+
+    </header>
+    <div class="container">
+        <h1>login to your account</h1>
+    <form action="noaction.php">
+    <div class="form-group">
+    <input type="number" name placeholder="Enter phone number">
+    </div>
+    <div class="form-group">
+    <input type="text" name placeholder="Enter password">
+    </div>
+    <button class="btn">Sign in</button>
+
+</form>
+    </div>
+
+    
+</body>
+</html>
